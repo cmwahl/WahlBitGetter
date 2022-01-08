@@ -6,7 +6,7 @@ int main()
 {
 
 	unsigned char data[5] = { 170 , 170 , 170 , 170 , 170 };
-	WahlBitGetter getter((void*)data, 5);
+	WahlBitGetter::BitGetter getter((void*)data, 5);
 
 	for (int i = 0; i < 5 * 8; ++i) {
 		cout << (short) getter.get();
